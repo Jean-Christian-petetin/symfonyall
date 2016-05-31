@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="reset.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<title> Titre </title>
+	</head>
+
+	<body>
+		<div id="Page">
+
+<!-- en tête de page -->
+			<header> <!--balise qui sert a définir l'en tête de la page -->
+				<h1 id="Nom"> Petetin </h1>
+				<h1 id="Prénom"> Jean-Christian </h1>
+				<h1 id="travail"> Développeur Web </h1>
+			</header>
+
+			<nav> <!-- Balise qui sert de menu de navigation -->
+				<ul>
+					<li> Formation </li>
+					<li> Experience </li>
+					<li> Loisir </li>
+				</ul>
+			</nav>
+
+<!-- millieu de page -->
+			<section id="Corps"> <!-- section de la page complète -->
+				<section id="Formation"> <!-- sert a délimiter la section formation -->
+					<header>
+						<h2> Formation </h2>
+					</header>
+
+					<article>
+						<p> formation </p>
+					</article>
+
+					<footer>
+						<p> Haut de page </p>
+					</footer>
+				</section>
+
+				<section id="Experience"> <!-- Sert a délimiter la section Experience -->
+					<header>
+						<h2> Experience </h2>
+					</header>
+
+					<article>
+						<p> experience </p>
+					</article>
+
+					<footer>
+						<p> Haut de page </p>
+					</footer>
+				</section>
+
+				<section id="Loisir"> <!-- Sert a délimiter la section Loisir -->
+					<header>
+						<h2> Loisir </h2>
+					</header>
+
+					<article>
+						<p> loisir </p>
+					</article>
+
+					<footer>
+						<p> Haut de page </p>
+					</footer>
+				</section>
+
+<!-- Pied de page -->
+				<footer id="PiedDePage"> <!-- cette balise sert a dire au navigateur que ceci est un pied de page -->
+					<ul>
+						<li> Adresse </li>
+						<li> Mail </li>
+					</ul>
+				</footer>
+			</section>
+		</div>
+	</body>
+</html>
