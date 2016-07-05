@@ -1,0 +1,209 @@
+/*
+couleur
+6C7A89 bleu gris
+1BBC9B bleu mer
+1BA39C bleu montagne
+DADFE1 gris metal
+*/
+
+/*
+On enleve les marges internes et externes de la liste,
+et on ajoute un background-color.
+*/
+
+ul.topnav{
+  position: fixed;
+	z-index: 1;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* On fait flotter les liens cote a cote */
+ul.topnav li{
+  float: left;
+}
+
+/* On skin les liens dans les list-items. */
+ul.topnav li a{
+  display: inline-block; /* definit une hauteur automatiquement*/
+  color: #ECF0F1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* On change le background-color des liens au survol. */
+ul.topnav li a:hover{
+  background-color: #111;
+}
+
+/* On cache le lien qui sert a ouvrir et fermé le topnav en petit écran */
+ul.topnav li.icon{
+  display: none;
+}
+
+
+/* Gestion du media queries*/
+
+/*
+Quand l'écran est plus petit que 680px de large, on cache les lits-items, sauf ("Home").
+Et on affiche le list-items ("icon") qui servira a dérouler et enrouler le menu.
+*/
+@media screen and (max-width:680px){
+  ul.topnav li:not(:first-child){
+    display: none;
+  }
+  ul.topnav li:last-child{
+    display: inline-block;
+    float: right;
+  }
+}
+
+/*
+La classe "responsive" est ajouter au topnav avec javascript quand l'utilisateur, clique sur l'icon.
+Cette classe affiche correctement le topnav sur les petits écrans.
+*/
+@media screen and (max-width:680px){
+  ul.topnav.responsive {
+    position: fixed;
+  }
+  ul.topnav.responsive li.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li{
+   float: none;
+   display: inline;
+ }
+ ul.topnav.responsive li a{
+   display: block;
+   text-align: left;
+ }
+}
+
+/* animation de fondu */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Ombre et marge titre */
+h2{
+  box-shadow: 0 3px 5px #888888;
+  margin-bottom: 10px;
+}
+
+
+/* gestion des sections*/
+
+.content{
+	display: flex;
+}
+
+.dimension{
+	max-width: 50%;
+	height: auto;
+}
+
+.pargeTop{
+  padding-top: 45px;
+}
+
+.textlign{
+	text-align: center;
+}
+
+.contenu{
+  width: 100%;
+}
+
+.color1{
+  background-color: #1BBC9B;
+}
+
+.color2{
+  background-color: #1BA39C;
+}
+
+.styletitle{
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #DADFE1;
+}
+
+
+/* Formulaire */
+
+form{
+	margin-top: 10%;
+}
+
+fieldset{
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 400px;
+	height: 200px;
+	margin: auto;
+	padding-left: 80px;
+}
+
+legend{
+	padding: 0 10px 0 10px;	
+}
+
+::-webkit-input-placeholder{
+	color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+}
+.formReset{
+	border: 0;
+	background-color: #1BBC9B;
+}
+
+.formStyle{
+	width: 180px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+textarea{
+	overflow: hidden;
+	resize: none;
+}
