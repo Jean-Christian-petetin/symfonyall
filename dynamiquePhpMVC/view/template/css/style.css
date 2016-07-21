@@ -1,0 +1,27 @@
+body{
+	text-align:center;
+}
+nav{
+	border-bottom : 3px solid red;
+}
+li{
+	list-style-type : none;
+	margin-left : 50px;
+	margin-right : 20px;
+	font-size : 3em;
+}
+.flexbox{
+	display : flex;
+}
+section{
+	height : 400px;
+	background-color : darkgrey;
+	overflow-y: auto;
+}
+footer{
+	position : fixed;
+	text-align : center;
+	bottom : 0;
+	width : 100%;
+	height : 50px;
+}
