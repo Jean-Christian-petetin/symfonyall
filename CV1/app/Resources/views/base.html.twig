@@ -1,0 +1,40 @@
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>{% block title %} CV {% endblock %} </title>
+    </head>
+    
+    <body>
+        <div id="Corps">	
+                                                                                                        <!-- En tête -->
+            <div id="EnTete">
+                <header>
+                    <h1 id="Nom"> Petetin </h1>
+                    <h1 id="Prenom"> Jean-Christian </h1>
+                    <h2> Developeur Web </h2>
+
+                    <div id="Presentation">
+                        <ul>
+                            <li> Age </li>
+                            <li> Adresse </li>
+                            <li> Adresse mail </li>
+                        </ul>
+                    </div>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li> <a href="#Exp"> Experience </a> </li>
+                        <li> <a href="#Formation"> Formation </a> </li>
+                        <li> <a href="#Loisir"> Loisir </a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+        {% block body %}
+            
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
