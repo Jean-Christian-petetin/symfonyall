@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> Consulter </h1>
+    {% for compte in client %}
+        {{ compte.numero }}
+        {{ compte.solde }}
+        {{ compte.decouvert }}
+    {%endfor%}
+{% endblock %}

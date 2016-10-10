@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> Accueil </h1>
+    <form action="{{ path('checkDeBanque') }}" method="POST">
+        <input type="text" placeholder="nom" id="username" name="_username"/>
+        <input type="password" placeholder="mot de passe" id="password" name="_password"/>
+        <input type="submit" value="Login"/>
+    </form>
+{% endblock %}
