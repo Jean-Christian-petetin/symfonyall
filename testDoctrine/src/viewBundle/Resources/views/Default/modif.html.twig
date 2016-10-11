@@ -1,0 +1,11 @@
+{% extends "template.html.twig" %}
+
+{% block title %}
+    {{ parent() }}
+    Modif
+{% endblock %}
+
+{% block body %}
+    {{form_start(formProjet,{'attr':{'action':path('modif',{'id':id})}})}}
+    {{form_end(formProjet)}}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "template.html.twig" %}
+
+{% block title %}
+    {{ parent() }}
+    Login
+{% endblock %}
+
+{% block body %}
+    <form action="{{ path("login")}}" method="post">
+        <input type="text" id="nom" placeholder="Username" name="_username" value="" />
+        <input type="password" id="pass" placeholder="Password" name="_password" value="" />
+        <input type="submit" value="Log Me" />
+    </form>
+{% endblock %}

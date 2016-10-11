@@ -1,0 +1,11 @@
+{% extends "template.html.twig" %}
+
+{% block title %}
+    {{ parent() }}
+    Admin
+{% endblock %}
+
+{% block body %}
+    {{form_start(formAddProjet,{'attr':{'action':path('valid')}})}}
+    {{form_end(formAddProjet)}}
+{% endblock %}

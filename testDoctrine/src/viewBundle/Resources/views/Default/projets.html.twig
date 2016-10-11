@@ -1,0 +1,20 @@
+{% extends "template.html.twig" %}
+
+{% block title %} 
+    {{ parent() }}
+    Projets
+{% endblock %}
+
+{% block body %}
+    {# on crée une zone pour stucturer nos information #}
+    {% for projet in varProjets %} {# for instance in variable #}
+        <div>
+            <h3>{{ projet.titre }}</h3>  {# on va chercher la colonne lié à l'entité correspondante #}
+            <p>{{ projet.image }}</p>
+            <p>{{ projet.description }}</p>
+            <p>Lien: <a href="http://{{ projet.lien }}">{{ projet.lien}}</a></p>
+            <p><a href="{{ path('editProjet',{'id':projet.id})}}">Edit</a></p>
+            <p><a href="{{ path('suprProjet',{'id':projet.id})}}">Delete</a></p>
+        </div>
+    {% endfor %}
+{% endblock %}

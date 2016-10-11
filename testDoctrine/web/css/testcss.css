@@ -1,0 +1,55 @@
+/* couleur primaire #1F996F */
+/* couleur secondaire #9035A6 */
+/* couleur tertiaire #E5A505 */
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+body{
+    background-color:  #ECF0F1/* #3A539B #007788*/;
+
+
+}
+
+#corps{
+    width: 95%;
+    margin: auto;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* header */
+header{
+    background-color: #3FC380;
+    width: 100%;
+}
+
+header, h1{
+    padding: 5px;
+}
+
+nav{
+    background-color: #00B16A;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 20px
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
